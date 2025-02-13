@@ -1,0 +1,22 @@
+<UserControl x:Class="TradeScopeApp.GUI.UserControls.TradeDataGrid"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:TradeScopeApp.GUI.UserControls">
+    <Grid>
+        <DataGrid ItemsSource="{Binding TradeDataCollection}" 
+                  AutoGenerateColumns="False" 
+                  IsReadOnly="True" 
+                  EnableRowVirtualization="True" 
+                  VirtualizingPanel.IsVirtualizing="True" 
+                  VirtualizingPanel.VirtualizationMode="Recycling">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Date" Binding="{Binding Date, StringFormat=d}" />
+                <DataGridTextColumn Header="Open" Binding="{Binding Open}" />
+                <DataGridTextColumn Header="High" Binding="{Binding High}" />
+                <DataGridTextColumn Header="Low" Binding="{Binding Low}" />
+                <DataGridTextColumn Header="Close" Binding="{Binding Close}" />
+                <DataGridTextColumn Header="Volume" Binding="{Binding Volume}" />
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</UserControl>

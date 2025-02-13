@@ -1,0 +1,26 @@
+<Trades>
+    <Trade>
+        <Date>2013-05-20</Date>
+        <Open>30.16</Open>
+        <High>30.39</High>
+        <Low>30.02</Low>
+        <Close>30.17</Close>
+        <Volume>1478200</Volume>
+    </Trade>
+    <Trade>
+        <Date>2013-05-17</Date>
+        <Open>29.77</Open>
+        <High>30.26</High>
+        <Low>29.77</Low>
+        <Close>30.26</Close>
+        <Volume>2481400</Volume>
+    </Trade>
+    <Trade>
+        <Date>2013-05-16</Date>
+        <Open>29.78</Open>
+        <High>29.94</High>
+        <Low>29.55</Low>
+        <Close>29.67</Close>
+        <Volume>1077000</Volume>
+    </Trade>
+</Trades>

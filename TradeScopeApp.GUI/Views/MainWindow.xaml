@@ -1,0 +1,24 @@
+﻿<Window x:Class="TradeScopeApp.GUI.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:TradeScopeApp.GUI.Views"
+        xmlns:viewModels="clr-namespace:TradeScopeApp.GUI.ViewModels"
+        Title="Trade Monitor" Height="450" Width="800">
+    <Grid>
+        <DataGrid ItemsSource="{Binding TradeDataCollection}" 
+                  AutoGenerateColumns="False" 
+                  IsReadOnly="True" 
+                  EnableRowVirtualization="True" 
+                  VirtualizingPanel.IsVirtualizing="True" 
+                  VirtualizingPanel.VirtualizationMode="Recycling">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Date" Binding="{Binding Date, StringFormat=d}" />
+                <DataGridTextColumn Header="Open" Binding="{Binding Open}" />
+                <DataGridTextColumn Header="High" Binding="{Binding High}" />
+                <DataGridTextColumn Header="Low" Binding="{Binding Low}" />
+                <DataGridTextColumn Header="Close" Binding="{Binding Close}" />
+                <DataGridTextColumn Header="Volume" Binding="{Binding Volume}" />
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>
